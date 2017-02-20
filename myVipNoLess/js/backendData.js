@@ -45,11 +45,13 @@
  
      var imgLists={
         lists:[
-            {img:'http://b.appsimg.com/2016/04/22/9971/14613080350225.jpg'},
-            {img:'http://b.appsimg.com/2016/04/26/7173/14616729127710.jpg'}
+            {img:'http://a.vpimg4.com/upload/flow/2017/02/20/8/14875549171601.jpg'},
+            {img:'http://a.vpimg3.com/upload/flow/2017/02/17/55/14873221569760.jpg'},
+            {img:'http://a.vpimg2.com/upload/flow/2017/02/17/48/14873422252757.jpg'},
+            {img:'http://a.vpimg4.com/upload/flow/2017/02/17/9/14873230520143.jpg'}
         ]
     }
     var cycleImg=new Vue({
-        el:'.slides',
+        el:'.main-cycle',
         data:imgLists
     })

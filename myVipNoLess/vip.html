@@ -4,8 +4,6 @@
     <meta charset='utf-8'>
     <title>VipTest</title>
     <link rel="stylesheet" type="text/css" href="css/index.css" >
-    <link rel="stylesheet" type="text/css" href="css/flexslider.css" />
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
 </head>
 <body>
 
@@ -150,17 +148,17 @@
         <div class="header-home-center-selling"><a href="#">分类</a></div>
     </div>
 </div>
-<div class="main-cycle" id='main-cycle'>
-    <div id="main" role="main">
-        <div class="flexslider">
-            <ul class="slides">
-                <li v-for='img in lists'>
-                    <a href="#">
-                        <img :src="img.img" />
-                    </a>
-                </li>
-            </ul>
-        </div>
+
+<div class="main-cycle" id="main-cycle">
+    <!-- //手风琴 -->
+    <div class='cycle'>
+        <ul>
+            <li v-for='img in lists'>
+                <a href="#">
+                    <img :src="img.img" />
+                </a>
+            </li>
+        </ul>
     </div>
 </div>
 <div class="main-push" id='main-push'>
@@ -204,51 +202,49 @@
 </div>
 
 <!-- 右侧的菜单栏 -->
-    <div class='backtop' id='backtop'>
-        <div class='userAll'>
-            <div class='username'><a href="#">账号</a></div>
-            <div class='user'>
-                <div class='userlogin'>您好，请登录</div>
-                <div class='usermy'>
-                    <div class='myorder'><a href="#">我的订单</a></div>
-                    <div class='myinfo'><a href="#">我的消息</a></div>
-                </div>
-                <div class='myvip'><a href="#">会员俱乐部</a></div>
+<div class='backtop' id='backtop'>
+    <div class='userAll'>
+        <div class='username'><a href="#">账号</a></div>
+        <div class='user'>
+            <div class='userlogin'>您好，请登录</div>
+            <div class='usermy'>
+                <div class='myorder'><a href="#">我的订单</a></div>
+                <div class='myinfo'><a href="#">我的消息</a></div>
             </div>
+            <div class='myvip'><a href="#">会员俱乐部</a></div>
         </div>
-        <div class='volume'>
-            <div class='volumeOne'><a href="#">劵</a></div>
-            <div class='myVolume'><a href="#">我的优惠卷</a></div>
-        </div>
-        <div class='brand'>
-            <div class='brandOne'><a href="#">品牌</a></div>
-            <div class='myBrand'><a href="#">我收藏的品牌</a></div>
-        </div>
-        <div class='goods'>
-            <div class='goodsOne'><a href="#">商品</a></div>
-            <div class='myGoods'><a href="#">我收藏的商品</a></div>
-        </div>
-        <div class='mybags'><a href="#">购物袋(0)</a></div>
-        <div class='goBack' onclick='scrollTo(0,0);'>
-            <a href="#">
-                <span>返回</span><br/>
-                <span>顶部</span>
-            </a>
-        </div>
-    </div> 
-    <!-- 左侧导航栏 -->
-    <div class='fixedLeft' id='fixedLeft'>
-        <div class='fdDivLists BgColor' id='home'><a href="#1F">首页</a></div>
-        <div class='fdDivLists' id='aa'><a href="#2F">特惠</a></div>
-        <div class='fdDivLists' id='bb'><a href="#3F">热销</a></div>
-        <div class='fdDivLists' id='cc'><a href="#4F">cccc</a></div>
-        <div class='fdDivLists' id='dd'><a href="#5F">dddd</a></div>
     </div>
+    <div class='volume'>
+        <div class='volumeOne'><a href="#">劵</a></div>
+        <div class='myVolume'><a href="#">我的优惠卷</a></div>
+    </div>
+    <div class='brand'>
+        <div class='brandOne'><a href="#">品牌</a></div>
+        <div class='myBrand'><a href="#">我收藏的品牌</a></div>
+    </div>
+    <div class='goods'>
+        <div class='goodsOne'><a href="#">商品</a></div>
+        <div class='myGoods'><a href="#">我收藏的商品</a></div>
+    </div>
+    <div class='mybags'><a href="#">购物袋(0)</a></div>
+    <div class='goBack' onclick='scrollTo(0,0);'>
+        <a href="#">
+            <span>返回</span><br/>
+            <span>顶部</span>
+        </a>
+    </div>
+</div> 
+<!-- 左侧导航栏 -->
+<div class='fixedLeft' id='fixedLeft'>
+    <div class='fdDivLists BgColor' id='home'><a href="#1F">首页</a></div>
+    <div class='fdDivLists' id='aa'><a href="#2F">特惠</a></div>
+    <div class='fdDivLists' id='bb'><a href="#3F">热销</a></div>
+    <div class='fdDivLists' id='cc'><a href="#4F">cccc</a></div>
+    <div class='fdDivLists' id='dd'><a href="#5F">dddd</a></div>
+</div>
 </body>
-<script type="text/javascript" src='js/jquery-1.7.1.js'></script>
-<script type="text/javascript" src="js/jquery.flexslider.js"></script>
 <script type="text/javascript" src='js/vue.js'></script>
-<script type="text/javascript" src='js/vipVue.js'></script>
+<script type="text/javascript" src='js/backendData.js'></script>
 <script type="text/javascript">
 window.onload=function(){
     var clienWidth=document.body.clientWidth||document.documentElement.clientWidth
@@ -312,15 +308,6 @@ window.onresize=function(){
         document.getElementById('fixedLeft').style.display='block';
     }
 } 
-//轮播图
-    $(window).load(function(){
-        $('.flexslider').flexslider({
-            animation: "slide",
-            start: function(slider){
-                $('body').removeClass('loading');
-            }
-        });
-    });
 </script>
 </html>
 
