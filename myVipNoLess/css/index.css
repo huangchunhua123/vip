@@ -93,8 +93,9 @@ p {font-size: 14px;line-height: 18px;}
 .display-introduce-logo,.display-introduce-collection,.display-introduce-login{height:20px;width:90px;float:left;line-height: 20px;text-align: center;margin-top:20px;margin-left:45px;}
 .display-introduce-collection{border: 1px solid #5D5D5D;}
 .display-introduce-collection a,.display-introduce-login a{color:#5D5D5D;}
-.display-introduce-login{border:1px solid #000000;}
+.display-introduce-login{border:1px solid #000000;font-weight: bold;}
 .display-introduce-login:hover{background: #000000;color: #ffffff;}
+.display-introduce-login:hover a{color: #ffffff;}
 
 .main-lists-imgleft:hover div{display: block;}
 
