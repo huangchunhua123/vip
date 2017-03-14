@@ -16,27 +16,27 @@
                 <span class='header-loding-goods'>请选择所在的收货地区</span>
                 <div id='header-goods-region' class='header-goods-region'>
                     <hr />
-                    A&nbsp;&nbsp;<a href="#">安徽</a>&nbsp;&nbsp;<a href="#">澳门</a>
+                    A<span><a href="#">安徽</a></span><span><a href="#">澳门</a></span>
                    <br />
-                    B&nbsp;&nbsp;<a href="#">北京</a><br />
-                    C&nbsp;&nbsp;<a href="#">重庆</a><br />
-                    F&nbsp;&nbsp;<a href="#">福建</a><br />
-                    G&nbsp;&nbsp;<a href="#">广东</a>&nbsp;&nbsp;<a href="#">广西</a>&nbsp;&nbsp;<a href="#">贵州</a>&nbsp;&nbsp;<a href="#">甘肃</a>
+                    B<span><a href="#">北京</a></span><br />
+                    C<span><a href="#">重庆</a></span><br />
+                    F<span><a href="#">福建</a></span><br />
+                    G<span><a href="#">广东</a></span><span><a href="#">广西</a></span><span><a href="#">贵州</a></span><span><a href="#">甘肃</a></span>
                     <br />
-                    H&nbsp;&nbsp;<a href="#">河北</a>&nbsp;&nbsp;<a href="#">河南</a>&nbsp;&nbsp;<a href="#">黑龙江</a>&nbsp;&nbsp;<a href="#">海南</a>&nbsp;&nbsp;<a href="#">湖北</a>&nbsp;&nbsp;<a href="#">湖南</a>
+                    H<span><a href="#">河北</a></span><span><a href="#">河南</a></span><span><a href="#">黑龙江</a></span><span><a href="#">海南</a></span><span><a href="#">湖北</a></span><span><a href="#">湖南</a></span>
                     <br />
-                    J&nbsp;&nbsp;<a href="#">江苏</a>&nbsp;&nbsp;<a href="#">吉林</a>&nbsp;&nbsp;<a href="#">江西</a><br />
-                    L&nbsp;&nbsp;<a href="#">辽宁</a><br />
-                    N&nbsp;&nbsp;<a href="#">内蒙古</a>&nbsp;&nbsp;<a href="#">宁夏</a>
+                    J<span><a href="#">江苏</a></span><span><a href="#">吉林</a></span><a href="#">江西</a><span></span><br />
+                    L<span><a href="#">辽宁</a></span><br />
+                    N<span><a href="#">内蒙古</a></span><span><a href="#">宁夏</a></span>
                     <br />
-                    Q&nbsp;&nbsp;<a href="#">青海</a><br />
-                    S&nbsp;&nbsp;<a href="#">上海</a>&nbsp;&nbsp;<a href="#">山东</a>&nbsp;&nbsp;<a href="#">山西</a>&nbsp;&nbsp;<a href="#">陕西</a>
+                    Q<span><a href="#">青海</a></span><br />
+                    S<span><a href="#">上海</a></span><span><a href="#">山东</a></span><span><a href="#">山西</a></span><span><a href="#">陕西</a></span>
                     <br />
-                    T&nbsp;&nbsp;<a href="#">台湾</a>&nbsp;&nbsp;<a href="#">天津</a>
+                    T<span><a href="#">台湾</a></span><span><a href="#">天津</a></span>
                     <br />
-                    X&nbsp;&nbsp;<a href="#">西藏</a>&nbsp;&nbsp;<a href="#">香港</a>&nbsp;&nbsp;<a href="#">新疆</a><br />
-                    Y&nbsp;&nbsp;<a href="#">云南</a><br />
-                    Z&nbsp;&nbsp;<a href="#">浙江</a><br />    
+                    X<span><a href="#">西藏</a></span><span><a href="#">香港</a></span><span><a href="#">新疆</a><br /></span>
+                    Y<span><a href="#">云南</a</span>><br />
+                    Z<span><a href="#">浙江</a></span><br />    
                 </div>
             </div>
         </div>
@@ -293,7 +293,7 @@ window.onscroll=function(){
 }
 //菜单栏和导航栏随屏幕宽度显示或者隐藏
 window.onresize=function(){
-    var clienWidth=document.body.clientWidth||document.documentElement.clientWidth
+    var clienWidth=document.body.clientWidth||document.documentElement.clientWidth;
     if (clienWidth<1100) {
         document.getElementById('backtop').style.display='none';
         document.getElementById('fixedLeft').style.display='none';
