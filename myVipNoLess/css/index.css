@@ -2,7 +2,6 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
 body {line-height: 1;}
 ol, ul {list-style: none;}
-blockquote, q demo
 blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
 table {border-collapse: collapse; border-spacing: 0;}
 strong {font-weight: bold;}
@@ -20,6 +19,7 @@ p {font-size: 14px;line-height: 18px;}
 .header-loding-loading{position:relative;left:-10px;top:0px;display:none;width: 270px;height: 400px;background: #ffffff;z-index: 99;}
 .header-loding-goods{margin-left: 20px;font-size: 13px;font-weight: bold;}
 .header-goods-region{margin-left: 20px;line-height: 22px;}
+.header-goods-region span{margin-left:8px;}
 .header-title-loding:hover div{display: block;}
 
 .header-title ul li { float:left;width: 75px;height: 30px;text-align: center;}
